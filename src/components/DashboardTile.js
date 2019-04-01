@@ -5,12 +5,12 @@ import styled from 'styled-components';
 const Tile = styled.a`
   display: block;
   color: inherit;
-  width: 200px;
-  height: 200px;
-  padding: 28px 39px;
+  width: 140px;
+  height: 140px;
+  padding: 20px;
   text-align: center;
   background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   &:hover {
     color: black;
   }
@@ -22,7 +22,7 @@ const Title = styled.h1`
 `
 
 const Icon = styled.i`
-  font-size: 80px;
+  font-size: 40px;
   margin-bottom: 10px;
   opacity: .6;
 `
