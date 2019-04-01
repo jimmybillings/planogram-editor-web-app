@@ -14,23 +14,23 @@ const Item = styled.li`
 `
 
 function DashboardTileList({ tiles, onSelectItem }) {
-    const events = {
-        onSelectItem,
-    };
+  const events = {
+    onSelectItem,
+  };
 
-    return (
-        <List>
-            {tiles.map(tile =>
-                <Item key={tile.id}>
-                    <DashboardTile item={tile} {...events} />
-                </Item>
-            )}
-        </List>
-    );
+  return (
+    <List>
+      {tiles.map(tile =>
+        <Item key={tile.id}>
+          <DashboardTile item={tile} {...events} />
+        </Item>
+      )}
+    </List>
+  );
 }
 
 DashboardTileList.propTypes = {
-    tiles: PropTypes.arrayOf(DashboardTile.propTypes.item).isRequired,
+  tiles: PropTypes.arrayOf(DashboardTile.propTypes.item).isRequired,
 };
 
 export default DashboardTileList;

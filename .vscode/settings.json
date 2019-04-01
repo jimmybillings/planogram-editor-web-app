@@ -1,0 +1,8 @@
+{
+  "editor.tabSize": 2,
+  "editor.wordWrapColumn": 130,
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.formatOnSave": true,
+  "files.insertFinalNewline": true,
+  "tslint.autoFixOnSave": true
+}
