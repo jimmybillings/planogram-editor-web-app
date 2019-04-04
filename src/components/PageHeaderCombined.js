@@ -7,10 +7,10 @@ import PageHeader from './PageHeader';
 
 function PageHeaderCombined({ pageHeader, pageSubHeader }) {
   return (
-    <header>
+    <div>
       <PageHeader {...pageHeader} />
       <PageSubHeader {...pageSubHeader} />
-    </header>
+    </div>
   );
 }
 
