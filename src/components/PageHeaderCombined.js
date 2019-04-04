@@ -4,21 +4,12 @@ import PropTypes from 'prop-types';
 import PageSubHeader from './PageSubHeader';
 import PageHeader from './PageHeader';
 
-export const newAction = {
-  url: 'http:goole.com',
-  icon: 'fas fa-edit'
-};
 
-export const subHeaderprops = {
-  title: 'View Store Map',
-  url: 'http://google.com'
-};
-
-function PageHeaderCombined({ pageHeader: { title, backUrl, newAction }, pageSubHeader: { titl } }) {
+function PageHeaderCombined({ pageHeader, pageSubHeader }) {
   return (
     <header>
-      <PageHeader title='WBA: 200 Stores' backUrl="http://google.com" newAction={newAction} />
-      <PageSubHeader {...subHeaderprops} />
+      <PageHeader {...pageHeader} />
+      <PageSubHeader {...pageSubHeader} />
     </header>
   );
 }
