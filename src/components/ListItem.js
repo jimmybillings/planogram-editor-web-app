@@ -23,6 +23,7 @@ const Item = styled.li`
     }
   }
   &:hover {
+    background:#e2e2e2;
     i {
       color: black;
     }
